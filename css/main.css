@@ -7,14 +7,14 @@ body{
   background-image: url(../assets/img/medium-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position:center;
   height: 100vh;
 }
 .flex-container{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 /* VISTA VENTANA MEDIUM SIZE */
