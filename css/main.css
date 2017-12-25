@@ -2,47 +2,36 @@
   margin: 0;
   padding: 0;
 }
-.img1{
-  position: absolute;
-  left: 20%;
-  bottom: 5%;
+/* VISTA VENTANA MOBILE */
+body{
+  background-image: url(../assets/img/medium-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
-
-/* VISTA VENTANA LARGE SIZE */
-@media screen and (min-width:800px) and (max-width:1800px)  {
-  body{
-    background-image: url(../assets/img/large-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 600px;
-  }
+.flex-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
 }
 
 /* VISTA VENTANA MEDIUM SIZE */
-@media screen and (min-width:650px) and (max-width:800px)  {
-  body{
-    background-image: url(../assets/img/medium-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 600px;
-  }
-  .img1{
-    content: url(../assets/img/kitten-medium.png)
-  }
+@media (min-width: 992px) {
+body{
+  background-image: url(../assets/img/small-img.jpg);
+}
+.img-kitten{
+  content: url(../assets/img/kitten-medium.png);
 }
 
-/* VISTA VENTANA SMALL SIZE */
-@media screen and (max-width:650px)  {
+/* VISTA VENTANA lARGE SIZE */
+@media (min-width: 1200px) {
   body{
-    background-image: url(../assets/img/small-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 600px;
+    background-image: url(../assets/img/large-img.jpg);
   }
-  .img1{
-    content: url(../assets/img/kitten-small.png)
+  .img-kitten{
+    content: url(../assets/img/kitten-large.png);
   }
 }
